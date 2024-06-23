@@ -57,17 +57,24 @@ nav {
 }
 
 .nav-links li {
+    padding: 10px 20px;
     margin-left: 20px;
+    border: 1px solid #555353;
+    transition: 0.2s;
 }
-.nav-links li a:hover{
+.nav-links li:hover{
     color: antiquewhite;
-    transition: 0.5s;
+    background: #555353;
 }
 
 .nav-links a {
-    color: white;
+    color: #f0e8e8;
     text-decoration: none;
     font-size: 18px;
+}
+.navicons{
+    width: 15px;
+    margin-right: 10px;
 }
 
 .burger {
