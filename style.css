@@ -28,7 +28,7 @@ nav {
     /* display: flex; */
     /* justify-content: space-between; */
     /* align-items: center; */
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 25px 20px;
 }
@@ -423,6 +423,9 @@ section {
      .logo{
         /* display: none; */
         font-size: 20px;
+     }
+     .navicons{
+        display: none;
      }
 
      .nav-links a{
