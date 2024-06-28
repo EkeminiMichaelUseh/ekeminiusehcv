@@ -100,6 +100,13 @@ nav{
     padding: 20px;
     text-align: center;
 }
+.picture{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
 #skills h3, #sampleprojects h3{
     font-size: 50px;
     color: #555567;
@@ -107,6 +114,7 @@ nav{
 .skillscard{
     width: 100%;
     padding: 20px;
+    position: relative;
 }
 .skillscard h4{
     margin-bottom: 20px;
