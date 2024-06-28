@@ -49,6 +49,7 @@ nav{
 }
 .intro{
     text-align: center;
+    animation: slide-down 1s ease-in-out;
 }
 .introdescription h1{
     font-size: 15px;
@@ -94,6 +95,7 @@ nav{
 #hero img{
     width: 100%;
     margin-top: 20px;
+    animation: slide-up 0.5s ease-in-out;
 }
 #skills{
     width: 100%;
