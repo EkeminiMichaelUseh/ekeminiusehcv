@@ -202,7 +202,9 @@ nav{
 }
 .phone, .email, .linkedin{
     display: flex;
-    width: 30px;
+}
+.whatsapp img{
+    margin-bottom: 20px;
 }
 .phone p, .email p{
     margin-left: 20px;
@@ -278,6 +280,9 @@ nav{
     margin-top: 20px;
     border-left: 10px solid #0c0ca054;
 }
+.splitcontacticons{
+    display: flex;
+}
 
 @media screen and (min-width: 767px){
     nav{
@@ -352,7 +357,7 @@ nav{
     #hero{
         width: 100%;
         height: 80vh;
-        padding: 120px 250px;
+        padding: 120px;
         position: relative;
     }
     #hero img{
@@ -365,10 +370,16 @@ nav{
         /* box-shadow: 0 0 30px #12123e1b */
 
     }
+    .introdescription{
+        margin-top: 100px;
+    }
     .namebox{
         font-size: 60px;
         text-align: left;
         padding-left: 20px;
+        position: absolute;
+        top: 140px;
+        z-index: 66;
     }
     .introdescription{
         width: 600px;
