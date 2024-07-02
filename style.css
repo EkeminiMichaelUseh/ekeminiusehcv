@@ -214,6 +214,21 @@ nav{
     font-weight: bold;
     margin-bottom: 20px;
 }
+.splitcontacticons{
+    width: 100px;
+    position: relative;
+}
+.splitcontacticons::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #80808050;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    z-index: -12;
+}
 .contacticons a{
     margin: 0 50px 20px 0;
     text-decoration: none;
