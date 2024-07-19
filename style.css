@@ -10,13 +10,15 @@ html{
 }
 nav{
     width: 100%;
-    background: #f3f3f7;
+    /* background: #f3f3f7; */
+    border: 1px solid #b3854096;
     position: fixed;
     z-index: 990;
     top: 0;
 }
 .nav-links{
     display: flex;
+    background: #2c2c30;
     justify-content: center;
     align-items: center;
     list-style: none;
@@ -25,14 +27,14 @@ nav{
 .nav-links li{
     padding:   10px 20px;
     margin: 0 10px;
-    border: 1px solid #b3854096;
+    border: 1px solid #f5f5f5;
     border-radius: 10px;
     /* box-shadow: 0 0 10px #12123e62; */
     transition: 0.2s;
 }
 .nav-links li a{
     text-decoration: none;
-    color: #12123e;
+    color: #f5f5f5;
     /* margin-left: 10px; */
     font-size: 13px;
 }
@@ -42,7 +44,7 @@ nav{
 }
 #hero{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 20px 0;
     background: #f3f3f7;
     margin-top: 50px;
@@ -103,6 +105,19 @@ nav{
     width: 100%;
     padding: 20px;
     text-align: center;
+}
+.tools{
+    font-weight: bold;
+}
+.tools-icons{
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+}
+.tools-icons img{
+    width: 30px;
+    border: 1px solid #b67d4181;
+    border-radius: 50%;
 }
 .picture{
     width: 200px;
@@ -303,6 +318,16 @@ nav{
     height: 25px;
 } */
 
+@media screen and (min-width: 645px){
+    #hero{
+        display: flex;
+        padding: 20px;
+    }
+    #hero img{
+        width: 250px;
+        margin-left: 20px;
+    }
+}
 @media screen and (min-width: 767px){
     nav{
         background: #fff;
@@ -310,12 +335,15 @@ nav{
     #hero{
         display: flex;
         background: #fff;
+        /* padding: 30px 50px; */
+        /* margin-bottom: 100px; */
+        /* height: 50vh; */
+    }
+    .intro{
         padding: 30px 50px;
-        margin-bottom: 100px;
-        height: 50vh;
     }
     #hero img{
-        width: 50%;
+        width: 40%;
     }
     #skills{
         background: #f3f3f7;
@@ -343,6 +371,14 @@ nav{
     }
 }
 
+@media screen and (min-width: 771px){
+    #hero{
+        padding-top: 0;
+    }
+    .intro{
+        padding-top: 50px;
+    }
+}
 @media screen and (min-width: 991px){
     .namebox{
         font-size: 70px
@@ -371,34 +407,29 @@ nav{
 }
 @media screen and (min-width: 1100px){
     .nav-links li:hover{
-        background: #f5f5f5;
+        background: #555567;
     }
     #hero{
         width: 100%;
-        height: 80vh;
-        padding: 120px;
+        /* height: 80vh; */
+        justify-content: space-between;
+        padding: 0 120px;
         position: relative;
-    }
-    #hero img{
-        width: 55%;
-        height: 600px;
-        position: absolute;
-        right: 0;
-        /* top: 20px; */
-        /* border-radius: 200px 0 0 200px; */
-        /* box-shadow: 0 0 30px #12123e1b */
-
     }
     .introdescription{
         margin-top: 100px;
     }
     .namebox{
-        font-size: 60px;
+        font-size: 80px;
         text-align: left;
         padding-left: 20px;
+        padding-bottom: 0;
         position: absolute;
-        top: 140px;
+        top: 160px;
         z-index: 66;
+    }
+    .intro{
+        margin-top: 120px;
     }
     .introdescription{
         width: 600px;
@@ -407,12 +438,12 @@ nav{
         font-size: 20px;
         text-align: left;
         padding-left: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .introdescription p{
         width: 450px;
         text-align: left;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
     .cta{
         text-align: left;
