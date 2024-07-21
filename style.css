@@ -111,8 +111,10 @@ nav{
 }
 .tools-icons{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    padding: 50px;
+    justify-content: center;
+    padding: 20px;
 }
 .tools-icons img{
     width: 30px;
@@ -164,13 +166,14 @@ nav{
 .projectcard{
     width: 100%;
     height: 500px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 0 5px #5858fd2b;
     margin-top: 20px;
     transition: 0.2s;
 }
 .titlediv{
     margin: 20px 0;
+    padding-top: 50px;
     border-left: 10px solid #6e6eb08c;
 }
 .titlediv h4{
@@ -185,7 +188,7 @@ nav{
 }
 .probrief{
     padding: 20px;
-    line-height: 20px;
+    line-height: 30px;
     color: #000000;
 }
 .shiftdown{
@@ -296,7 +299,7 @@ nav{
 }
 .fullprojcard img{
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
     object-fit: cover;
 }
 .otherprojectcontent{
@@ -318,6 +321,19 @@ nav{
     height: 25px;
 } */
 
+#achieve{
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+}
+.achievecontent p{
+    width: 100%;
+    margin: 20px 0 40px;
+    padding: 30px;
+    box-shadow: 0 0 10px #5858fd5e;
+    line-height: 30px;
+}
+
 @media screen and (min-width: 645px){
     #hero{
         display: flex;
@@ -326,6 +342,9 @@ nav{
     #hero img{
         width: 250px;
         margin-left: 20px;
+    }
+    #achieve{
+        padding: 20px 50px;
     }
 }
 @media screen and (min-width: 767px){
@@ -399,10 +418,20 @@ nav{
     #contact{
         padding-left: 50px;
     }
+    #achieve{
+        padding: 50px 100px;
+    }
 }
 @media screen and (min-width: 1000px){
     .projectcard{
         width: 450px;
+    }
+    
+    .achievecontent p{
+        width: 70%;
+    }
+    .sec{
+        float: right;
     }
 }
 @media screen and (min-width: 1100px){
@@ -482,6 +511,9 @@ nav{
     }
     .explain p{
         font-size: 60px;
+    }
+    #achieve{
+        padding: 50px 250px;
     }
 }
 
