@@ -100,8 +100,9 @@ html{
     display: flex;
     gap: 30px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 40px;
 }
 .btn{
     text-align: center;
@@ -143,7 +144,6 @@ html{
 .skillscard p{
     text-align: left;
     margin-bottom: 20px;
-    border-left: 10px solid #9e5c9e35;
 }
 
 /* ---------- Project section ----------- */
@@ -180,7 +180,6 @@ html{
 }
 #projcardback p{
     line-height: 25px;
-    font-size: 13px;
 }
 .moreproj{
     text-decoration: none;
@@ -202,7 +201,6 @@ html{
     padding: 20px;
     text-align: left;
     line-height: 25px;
-    font-size: 13px;
 }
 
 /* ----------- Contact section ----------- */
@@ -238,6 +236,7 @@ html{
 }
 .dial p{
     font-size: 13px;
+    font-weight: bold;
 }
 .contactcontent img{
     width: 30px;
