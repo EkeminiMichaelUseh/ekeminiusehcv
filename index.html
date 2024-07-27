@@ -7,148 +7,375 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul class="nav-links">
-            <li><img src="aboutme.png" alt="info_icon" class="navicons"><a href="#hero">Home</a></li>
-            <li><img src="skills.png" alt="skill_icon" class="navicons"><a href="#skills">Skills</a></li>
-            <li><img src="project.png" alt="project_icon" class="navicons"><a href="projects.html">Projects</a></li>
-            <li><img src="call.jpg" alt="contact_icon" class="navicons"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="hero">
-        <div class="intro">
-            <p class="namebox">Ekemini Useh</p>
-            <div class="introdescription">
-                <h1>Data professional</h1>
-                <p>An extremely talented and competent data analyst with 7 years of experience and a track record of 
-                    successfully using data to inform strategic choices made by an organization.</p>
-            </div>
-            <div class="cta">
-                <a href="projects.html" class="btn1">Projects</a>
-                <a href="achievements.html" class="btn2">Key Achievements</a>
-            </div>
+    <section id="all_pages">
+        <div class="logo_mobile">
+            <p>Ekemini Useh</p>
         </div>
-        <!-- <img src="illustration2.jpg" alt=""> -->
-         <img src="myphoto.jpg" alt="">
-    </section>
 
-    <section id="skills">
-        <h3>Skills</h3>
-        <div class="skillsdisplay">
-            <div class="skillscard">
-                <h4>Technical Skills</h4>
-                <ul>
-                    <li>Proficient in <span class="tools">statistical analysis</span> and <span class="tools">machine learning</span></li>
-                    <li>Efficient in data cleaning, transfomation, manipulation, and analysis with <span class="tools">Python</span>, <span class="tools">R</span>, and <span class="tools">Microsoft/Oracle SQL</span>.</li>
-                    <li>Highly skilled in <span class="tools">Microsoft Excel</span> for data analysis using
-                        complex functions, VLOOKUP, and pivot tables</li>
-                    <li>Experienced with <span class="tools">Apache spark</span> for big data processing.</li>
-                    <li>Task automation.</li>
-                    <li>Strong data visualization skills using <span class="tools">Power BI</span>, <span class="tools">Tableau</span>, and <span class="tools">SAS</span>.</li>
-                    <li>Familiar with cloud platforms (<span class="tools">AWS</span>, <span class="tools">Google cloud</span>, and <span class="tools">Azure</span>) for data storage and processing.</li>
-                    <li>Proficiency in using <span class="tools">Git</span> for version control and collaboration.</li>
-                </ul>
-                <div class="tools-icons">
-                    <img src="python.jpeg" alt="">
-                    <img src="R.png" alt="">
-                    <img src="sql.png" alt="">
-                    <img src="excel.jpg" alt="">
-                    <img src="powerbi.png" alt="">
-                    <img src="tableau.jpg" alt="">
-                    <img src="sas.png" alt="">
-                    <img src="spark.png" alt="">
-                    <img src="aws.png" alt="">
-                    <img src="google_cloud.png" alt="">
-                    <img src="azure.png" alt="">
-                    <img src="git.png" alt="">
+        <div id="mobile_portfolio_body">
+            <!-------------- First page sections -------------->
+            <div id="hero">
+                <img src="images/myphoto.jpg" alt="">
+                <div class="hero_writeup">
+                    <h1>Data professional</h1>
+                    <p>An extremely talented and competent data analyst with 7 years of experience and a track record of 
+                        successfully using data to inform strategic choices made by organizations.</p>
+
+                    <div class="cta">
+                        <a href="#achievements" class="button">Achievements</a>
+                    </div>
                 </div>
             </div>
-            <div class="skillscard softskills">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Problem-solving</li>
-                    <li>Ability to ask the proper questions, approach issues logically, and come up with data-driven answers.</li>
-                    <li>Precized in analysis to ensure accuracy and 
-                        reliability of results.</li>
-                    <li>Excellent communication abilities, both written and verbal, to convey data results and recommendations to stakeholders who 
-                        are not technical.</li>
-                    <li>Ability to collaborate well in groups.</li>
-                    <li>Proactive in picking up new skills and methods and keeping abreast of market developments.</li>
-                    <li>Ability to successfully manage projects, set priorities, and adhere to deadlines.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <section id="sampleprojects">
-        <h3>Recent projects</h3>
-            <div class="recentprojcardcontainer">
-                <a href="https://github.com/EkeminiMichaelUseh/MelanomaEDAUsingR" target="_blank" class="clickprojcard">
-                    <div class="projectcard">
-                        <div class="prodescription">
-                            <div class="protitlecontainer">
-                                <div class="titlediv">
-                                    <h4>EDA on 'Survival from malignant melanoma' dataset with R</h4>
-                                    <!-- <h6 class="role">My role in the project.</h6> -->
-                                </div>
-                            </div>
-                            <p class="probrief">This report presents the 
-                                exploratory data analysis of the “Survival 
-                                from malignant melanoma” dataset using R. 
-                                The records were kept from 1962 to 1977.</p>
+            <!----------- Second page section -------------->
+
+            <div id="skills">
+                <h3>Skills</h3>
+                <div class="skillsdisplay">
+                    <div class="skillscard">
+                        <h4>Technical Skills</h4>
+                        <p>Proficient in <span class="tools">statistical analysis</span> and <span class="tools">machine learning</span></p>
+                        <p>Efficient in data cleaning, transfomation, manipulation, and analysis with <span class="tools">Python</span>, <span class="tools">R</span>, and <span class="tools">Microsoft/Oracle SQL</span>.</p>
+                        <p>Highly skilled in <span class="tools">Microsoft Excel</span> for data analysis using
+                            complex functions, VLOOKUP, and pivot tables</p>
+                        <p>Experienced with <span class="tools">Apache spark</span> for big data processing.</p>
+                        <p>Strong data visualization skills using <span class="tools">Power BI</span>, <span class="tools">Tableau</span>, and <span class="tools">SAS</span>.</p>
+                        <p>Familiar with cloud platforms (<span class="tools">AWS</span>, <span class="tools">Google cloud</span>, and <span class="tools">Azure</span>) for data storage and processing.</p>
+                        <p>Proficiency in using <span class="tools">Git</span> for version control and collaboration.</p>
+                    </div>
+                    <div class="skillscard softskills">
+                        <h4>Soft Skills</h4>
+                        <p>Problem-solving</p>
+                        <p>Ability to ask the proper questions, approach issues logically, and come up with data-driven answers.</p>
+                        <p>Precized in analysis to ensure accuracy and 
+                            reliability of results.</p>
+                        <p>Excellent communication abilities, both written and verbal, to convey data results and recommendations to stakeholders who 
+                            are not technical.</p>
+                        <p>Ability to collaborate well in groups.</p>
+                        <p>Proactive in picking up new skills and methods and keeping abreast of market developments.</p>
+                        <p>Ability to successfully manage projects, set priorities, and adhere to deadlines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ 3rd page section -------------->
+
+            <div id="projects">
+                <h3>Recent projects</h3>
+                <div class="skillsdisplay projcard">
+                    <a href="#">
+                        <div class="skillscard" id="projcardback">
+                            <img src="images/models.png" alt="">
+                            <h4>Project 1</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Ipsum 
+                                aliquid dolor modi tenetur? Debitis, atque.</p>
                         </div>
-                        <img src="illustration2.jpg" alt="">
-                    </div>
-                </a>  
+                    </a>
+                    <a href="#">
+                        <div class="skillscard" id="projcardback">
+                            <img src="images/eda.png" alt="">
+                            <h4>Project 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Ipsum 
+                                aliquid dolor modi tenetur? Debitis, atque.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="skillscard" id="projcardback">
+                            <img src="images/dashboard.png" alt="">
+                            <h4>Project 3</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Ipsum 
+                                aliquid dolor modi tenetur? Debitis, atque.</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="projects.html" class="moreproj">More projects...</a>
             </div>
-        <a href="projects.html" class="moreproj">See more</a>  
-    </section>
 
-    <section id="contact">
-        <div class="copyright">
-            <p>&#169 2024 Ekemini Useh</p><br>
-            <a href="https://www.vecteezy.com/free-vector/data-analysis" class="attribution">Project cover illustration by Vecteezy</a>
+            <div id="achievements">
+                <h3>My Achievements</h3>
+                <div class="achievements">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ 4th page section ------------->
+
+            <div id="contact">
+                <h3>Do you have a project that requires 
+                    my expertise? Please contact me.</h3>
+                
+                <div class="contactcontent">
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/call_icon.png" alt="">
+                            <p>+447473545517</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/mail_icon.png" alt="">
+                            <p>ekeminiuseh@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/whatsapp_icon.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/linkedin_icon.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!----------- Copyright -------------->
+
+            <div class="copyright">
+                <p>&#169 2024 Ekemini Useh</p>
+            </div>
+
         </div>
 
-        <div class="contactcontent">
-            <!-- <img src="myphoto.jpg" alt="" class="picture"> -->
-            <div class="explain">
-                <p>Do you have a project that requires 
-                    my expertise? Please contact me.
-                </p>
-            </div>
-            <div class="splitcontacticons">
-                <div class="call_and_email">
-                    <div class="contacticons">
-                        <a href="tel:+447473545517" class="phone">
-                            <img src="call.jpg" alt="Phone icon">
-                            <p>+447473545517</p>
-                        </a>
-                        <a href="https://mail.google.com/mail/?view=cm&to=ekeminiuseh@gmail.com&su=From%20your%20Data%20Analyst%20Portfolio" class="email" target="_blank">   
-                            <img src="email.png" alt="Email icon">
-                            <p>ekeminiuseh@gmail.com</p>    
-                        </a>
-                    </div>
-                </div>
+        <!---------- Desktop section ----------->
 
-                <div class="whatsapp_and_linkedin">
-                    <div class="contacticons" id="straight">
-                        <a href="https://wa.me/+447473545517?text=Hello.%20I%20saw%20your%20Data%20Analyst%20Portfolio" class="whatsapp" target="_blank">
-                            <img src="whatsappp.png" alt="Whatsapp icon">
-                        </a>
-                        
-                        <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" class="linkedin" target="_blank">
-                            <img src="linkedin.jpg" alt="Linkedin icon">
-                        </a>
+        <div id="desktop_portfolio_body">
+            <div class="divide1">
+                <div class="nav_desktop">
+                    <a href="#desktop_hero">
+                        <div class="btn">
+                            <img src="images/home_icon.png" alt="">
+                            <p>Home</p>
+                        </div>
+                    </a>
+    
+                    <a href="#desktop_skills">
+                        <div class="btn">
+                            <img src="images/skills_icon.png" alt="">
+                            <p>Skills</p>
+                        </div>
+                    </a>
+    
+                    <a href="#desktop_projects">
+                        <div class="btn">
+                            <img src="images/projects_icon.png" alt="">
+                            <p>Projecs</p>
+                        </div>
+                    </a>
+    
+                    <a href="#desktop_contact">
+                        <div class="btn">
+                            <img src="images/contact_icon.png" alt="">
+                            <p>Contact</p>
+                        </div>
+                    </a>
+                </div>
+                
+            <div class="desktop_copyright">
+                <p>&#169 2024 Ekemini Useh</p>
+            </div>
+            </div>
+
+            <div class="divide2">
+                <!-------------- First page sections -------------->
+            <div id="desktop_hero">
+                <div class="hero_writeup">
+                    <h1>Data professional</h1>
+                    <p>An extremely talented and competent data analyst with 7 years of experience and a track record of 
+                        successfully using data to inform strategic choices made by organizations.</p>
+
+                    <div class="cta">
+                        <a href="#desktop_achievements" class="button">Achievements</a>
                     </div>
                 </div>
+                <img src="images/myphoto.jpg" alt="">
+            </div>
+
+            <!----------- Second page section -------------->
+
+            <div id="desktop_skills">
+                <h3>Skills</h3>
+                <div class="skillsdisplay desktop_skillsdisplay">
+                    <div class="skillscard">
+                        <h4>Technical Skills</h4>
+                        <p>Proficient in <span class="tools">statistical analysis</span> and <span class="tools">machine learning</span></p>
+                        <p>Efficient in data cleaning, transfomation, manipulation, and analysis with <span class="tools">Python</span>, <span class="tools">R</span>, and <span class="tools">Microsoft/Oracle SQL</span>.</p>
+                        <p>Highly skilled in <span class="tools">Microsoft Excel</span> for data analysis using
+                            complex functions, VLOOKUP, and pivot tables</p>
+                        <p>Experienced with <span class="tools">Apache spark</span> for big data processing.</p>
+                        <p>Strong data visualization skills using <span class="tools">Power BI</span>, <span class="tools">Tableau</span>, and <span class="tools">SAS</span>.</p>
+                        <p>Familiar with cloud platforms (<span class="tools">AWS</span>, <span class="tools">Google cloud</span>, and <span class="tools">Azure</span>) for data storage and processing.</p>
+                        <p>Proficiency in using <span class="tools">Git</span> for version control and collaboration.</p>
+                    </div>
+                    <div class="skillscard softskills">
+                        <h4>Soft Skills</h4>
+                        <p>Problem-solving</p>
+                        <p>Ability to ask the proper questions, approach issues logically, and come up with data-driven answers.</p>
+                        <p>Precized in analysis to ensure accuracy and 
+                            reliability of results.</p>
+                        <p>Excellent communication abilities, both written and verbal, to convey data results and recommendations to stakeholders who 
+                            are not technical.</p>
+                        <p>Ability to collaborate well in groups.</p>
+                        <p>Proactive in picking up new skills and methods and keeping abreast of market developments.</p>
+                        <p>Ability to successfully manage projects, set priorities, and adhere to deadlines.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ 3rd page section -------------->
+
+            <div id="desktop_projects">
+                <h3>Recent projects</h3>
+                <div class="skillsdisplay projcard">
+                    <a href="#">
+                        <div class="skillscard" id="projcardback">
+                            <img src="images/models.png" alt="">
+                            <h4>Project 1</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Ipsum 
+                                aliquid dolor modi tenetur? Debitis, atque.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="skillscard" id="projcardback">
+                            <img src="images/eda.png" alt="">
+                            <h4>Project 2</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Ipsum 
+                                aliquid dolor modi tenetur? Debitis, atque.</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="skillscard" id="projcardback">
+                            <img src="images/dashboard.png" alt="">
+                            <h4>Project 3</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                                elit. Ipsum 
+                                aliquid dolor modi tenetur? Debitis, atque.</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="projects.html" class="moreproj">More projects...</a>
+            </div>
+
+            <!----------- Achievement desktop ---------->
+
+            <div id="desktop_achievements">
+                <h3>My Achievements</h3>
+                <div class="skillsdisplay projcard">
+                    <div class="skillscard" id="projcardback">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                    <div class="skillscard" id="projcardback">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                    <div class="skillscard" id="projcardback">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                    <div class="skillscard" id="projcardback">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Ipsum 
+                            aliquid dolor modi tenetur? Debitis, atque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ 4th page section ------------->
+
+            <div id="desktop_contact">
+                <h3>Do you have a project that requires 
+                    my expertise? Please contact me.</h3>
+                
+                <div class="contactcontent">
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/call_icon.png" alt="">
+                            <p>+447473545517</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/mail_icon.png" alt="">
+                            <p>ekeminiuseh@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/whatsapp_icon.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="dial">
+                            <img src="images/linkedin_icon.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!----------- Mobile navigation ----------->
+        
+        <div class="nav">
+            <div class="nav_mobile">
+                <a href="#hero">
+                    <div class="btn">
+                        <img src="images/home_icon.png" alt="">
+                        <p>Home</p>
+                    </div>
+                </a>
+
+                <a href="#skills">
+                    <div class="btn">
+                        <img src="images/skills_icon.png" alt="">
+                        <p>Skills</p>
+                    </div>
+                </a>
+
+                <a href="#projects">
+                    <div class="btn">
+                        <img src="images/projects_icon.png" alt="">
+                        <p>Projecs</p>
+                    </div>
+                </a>
+
+                <a href="#contact">
+                    <div class="btn">
+                        <img src="images/contact_icon.png" alt="">
+                        <p>Contact</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
