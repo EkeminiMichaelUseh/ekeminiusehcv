@@ -140,6 +140,7 @@ html{
 }
 .skillscard h4{
     margin-bottom: 20px;
+    font-size: 20px;
 }
 .skillscard p{
     text-align: left;
@@ -158,15 +159,25 @@ html{
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+    background: linear-gradient(#000000d6, #000000d6), url(images/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-#projects h3, #achievements h3{
+#projects h3{
     padding: 20px;
     color: #9e5c9e;
+}
+#achievements h3{
+    color: #f5f5f5;
 }
 .projcard a{
     text-decoration: none;
     color: #000000;
 }
+/* .projcard{
+    height: 80vh;
+    overflow-y: scroll;
+} */
 #projcardback{
     background: #fff;
     box-shadow: 0 0 10px #12123e30;
@@ -191,10 +202,18 @@ html{
 .achievements{
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 200px;
-    overflow-x: scroll;
-    
+    padding: 20px;
+    /* height: 200px; */
+    /* overflow-x: scroll; */   
+}
+.achievements div{
+    background: #f5f5f5;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
 .achievements div p{
     width: 300px;
@@ -256,7 +275,10 @@ html{
 .desktop_copyright p{
     font-size: 13px;
     color: #9e5c9e;
-    margin-top: 180px;
+    /* margin-top: 180px; */
+}
+.bold{
+    font-weight: bold;
 }
 
 /* --------- Responsiveness ----------- */
@@ -278,6 +300,11 @@ html{
     }
     #skills{
         margin-top: 5px;
+    }
+}
+@media screen and (min-width: 700px){
+    #skills, #projects, #achievements{
+        padding: 20px 80px;
     }
 }
 @media screen and (min-width: 750px){
@@ -304,28 +331,46 @@ html{
         display: none;
     }
     .logo_mobile{
-        padding: 20px 250px;
+        display: none;
+    }
+    .logo_desktop{
+        padding: 0 20px;
+        margin-left: 50px;
+        color: #555567;
+        font-weight: bold;
+        word-spacing: 5px;
+        font-size: 30px;
+        font-family: "Poppins", sans-serif;
     }
     #desktop_portfolio_body{
         display: unset;
-        display: flex;
-        width: 80%;
+        width: 100%;
         height: 100vh;
         margin-top: 80px;
         position: relative;
     }
-    .divide1{
-        width: 250px;
-        height: 100vh;
+    .desktop_navi_bar{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
         position: fixed;
-        padding: 170px 40px;
-        left: 0;
+        padding: 20px;
+        top: 0;
         background: #fff;
         border-right: 1px solid #9e5c9e;
+        z-index: 800;
+    }
+    .desktop_navi_bar ul{
+        display: flex;
+        margin-right: 250px;
+    }
+    .nav_desktop{
+        display: flex;
     }
     .nav_desktop .btn{
         display: flex;
-        padding: 20px 40px;
+        padding: 10px 20px;
         border-radius: 10px;
         margin-bottom: 20px;
         transition: 0.3s;
@@ -340,27 +385,27 @@ html{
     .nav_desktop a{
         text-decoration: none;
         color: black;
-        font-size: 20px;
+        font-size: 15px;
     }
     .nav_desktop img{
-        width: 20px;
+        width: 15px;
     }
     #desktop_hero{
-        width: 91%;
-        height: 90vh;
+        width: 100%;
+        height: 100vh;
         display: flex;
-        justify-content: space-between;
-        padding: 10px 100px 10px 300px;
-        margin-left: 0;
+        justify-content: center;
+        padding: 50px 0 0 100px;
         box-sizing: border-box;
     }
     #desktop_hero img{
         width: 50%;
+        object-fit: cover;
     }
     #desktop_hero .hero_writeup{
         width: 50%;
-        padding-top: 200px;
-        margin-left: 100px;
+        padding: 200px 0 0 40px;
+        margin: 0 0 0 40px;
         text-align: left;
         box-shadow: unset;
         border-bottom: unset;
@@ -368,13 +413,10 @@ html{
     #desktop_hero .hero_writeup h1{
         font-size: 70px;
     }
-
     #desktop_skills{
         width: 100%;
-        height: 90vh;
-        padding: 50px 200px 50px 350px;
+        padding: 100px 230px;
         box-sizing: border-box;
-        margin-left: 0;
         margin-top: 50px;
         background: linear-gradient(#9e5c9e,pink);
         /* background-position: center; */
@@ -382,55 +424,71 @@ html{
         /* background-attachment: fixed; */
     }
     #desktop_skills h3{
-        font-size: 50px;
+        font-size: 40px;
         /* color: #222241; */
         color: #fff;
     }
-    .desktop_skillsdisplay{
+    .desktop_skillsdisplay, .desktop_projcard{
         width: 100%;
         display: flex;
-        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .desktop_projcard a{
+        text-decoration: none;
+        color: #000000;
     }
     .desktop_skillsdisplay .skillscard{
         width: 500px;
     }
     #desktop_projects, #desktop_achievements{
         width: 100%;
-        padding: 50px 150px 50px 250px;
+        /* padding: 50px 150px 50px 250px; */
+        padding: 50px 100px;
         box-sizing: border-box;
-        margin-left: 0;
-        margin-top: 50px;
+        margin-top: 100px;
     }
-    #desktop_projects h3, #desktop_achievements h3{
+    #desktop_achievements{
+        background: linear-gradient(#000000d6, #000000d6), url(images/background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #desktop_projects h3, #desktop_achievements h3, #desktop_contact h3{
         font-size: 50px;
-        margin-left: 100px;
+        margin-left: 150px;
+    }
+    #desktop_achievements h3{
+        color: #f5f5f5;
     }
     .projcard{
         width: 100%;
-        height: 500px;
-        overflow-y: scroll;
+        padding: 0 80px;
+    }
+    #projcardback{
+        width: 350px;
+        padding: 40px;
     }
     #desktop_projects .moreproj{
         float: right;
         color: #000000;
         padding-right: 100px;
+        font-size: 15px;
+        border-bottom: 5px solid #0000006b;
     }
     .fullprojectcard{
         width: 80vw;
     }
     #desktop_contact{
         width: 100%;
-        height: 90vh;
-        padding: 50px 150px 50px 300px;
+        /* padding: 50px 150px 50px 300px; */
+        padding: 50px 100px;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        /* margin-top: 100px; */
-        margin-left: 0;
         background: #9e5c9e48;
     }
     #desktop_contact h3{
-        margin-left: 50px;
         font-size: 50px;
     }
     .contactcontent{
@@ -444,8 +502,10 @@ html{
     .dial img{
         width: 50px;
     }
-    .divide2{
-        scroll-behavior: smooth;
+    .desktop_copyright{
+        width: 100%;
+        padding: 20px 100px;
+        text-align: center;
     }
 }
 
