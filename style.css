@@ -282,6 +282,9 @@ html{
 .bold{
     font-weight: bold;
 }
+.desktop_copyright{
+    display: none;
+}
 
 /* --------- Responsiveness ----------- */
 
@@ -505,6 +508,7 @@ html{
         width: 50px;
     }
     .desktop_copyright{
+        display: unset;
         width: 100%;
         padding: 20px 100px;
         text-align: center;
