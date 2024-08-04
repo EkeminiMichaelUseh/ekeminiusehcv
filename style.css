@@ -16,6 +16,9 @@ html{
     position: relative;
 }
 .logo_mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 10px 20px;
     background: #fff;
@@ -31,6 +34,15 @@ html{
     word-spacing: 5px;
     font-size: 30px;
     font-family: "Poppins", sans-serif;
+}
+.logo_mobile a{
+    text-decoration: none;
+    color: #a12f42;
+    border: 1px solid #a12f42;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    display: none;
 }
 #mobile_portfolio_body{
     width: 100vw;
@@ -115,6 +127,7 @@ html{
     color: black;
     font-size: 13px;
 }
+
 /* ------------- Skills section ------------- */
 
 #skills{
@@ -204,12 +217,14 @@ html{
 .achievements{
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     width: 100%;
     padding: 20px;
-    /* height: 200px; */
-    /* overflow-x: scroll; */   
+    overflow-x: scroll;   
+}
+.achievements::-webkit-scrollbar{
+    height: 4px;
 }
 .achievements div{
     background: #f5f5f5;
@@ -340,7 +355,6 @@ html{
     }
     .logo_desktop{
         padding: 0 20px;
-        margin-left: 150px;
         color: #555567;
         font-weight: bold;
         word-spacing: 5px;
@@ -360,7 +374,7 @@ html{
         align-content: center;
         justify-content: space-between;
         position: fixed;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
         top: 0;
         background: #fff;
         border-right: 1px solid #9e5c9e;
@@ -368,7 +382,23 @@ html{
     }
     .desktop_navi_bar ul{
         display: flex;
-        margin-right: 250px;
+        margin-right: 50px;
+    }
+    .desktop_navi_bar .btn_github_repo{
+        text-decoration: none;
+        color: #a12f42;
+        border: 1px solid #a12f42;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        transition: 0.3s;
+        display: none;
+    }
+    .desktop_navi_bar .btn_github_repo:hover{
+        background: #a12f42;
+        color: #f5f5f5;
+        box-shadow: 0 0 10px #a12f4289;
     }
     .nav_desktop{
         display: flex;
@@ -409,18 +439,18 @@ html{
     }
     #desktop_hero .hero_writeup{
         width: 50%;
-        padding: 200px 0 0 40px;
+        padding: 200px 100px 0 40px;
         margin: 0 0 0 40px;
         text-align: left;
         box-shadow: unset;
         border-bottom: unset;
     }
     #desktop_hero .hero_writeup h1{
-        font-size: 70px;
+        font-size: 60px;
     }
     #desktop_skills{
         width: 100%;
-        padding: 100px 230px;
+        padding: 100px 100px;
         box-sizing: border-box;
         margin-top: 50px;
         background: linear-gradient(#9e5c9e,pink);
@@ -432,12 +462,16 @@ html{
         font-size: 40px;
         /* color: #222241; */
         color: #fff;
+        margin-left: 100px;
+    }
+    .desktop_skillsdisplay{
+        justify-content: center;
     }
     .desktop_skillsdisplay, .desktop_projcard{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
         gap: 30px;
     }
     .desktop_projcard a{
@@ -472,7 +506,11 @@ html{
     }
     #projcardback{
         width: 350px;
+        height: 450px;
         padding: 40px;
+    }
+    #desktop_achievements .projcard #projcardback{
+        height: unset;
     }
     #desktop_projects .moreproj{
         float: right;
