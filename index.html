@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="CV_icon" href="images/cv_icon.png">
-    <title>EkeminiCV</title>
+    <link rel="shortcut icon" type="cv_icon" href="images/cv_icon.png">
+    <title>EDAproject</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,92 +14,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="all_pages">
-        <div class="logo_mobile">
-            <p>Ekemini Useh</p>    
-            <a href="https://github.com/EkeminiMichaelUseh?tab=repositories" class="btn_github_repo" target="_blank">Github</a>
+    <section id="introduction">
+        <div class="navigate">
+            <a href="#introduction" class="back_to_home">
+                <img src="images/up.png" alt="">
+            </a>
+            <p class="toc_head burger" onclick="showMenu()">CV Sections <img src="images/select.png" alt=""></p>
+            <div class="toc" id="navLinks">
+                <img src="images/menu4.png" alt="" class="close-burger" onclick="hideMenu()">
+                <p><a href="#introduction"><img src="images/home_icon.png" alt=""> Introduction</a></p>
+                <p><a href="#data"><img src="images/skills_icon.png" alt=""> Experience</a></p>
+                <p><a href="#eda"><img src="images/projects_icon.png" alt=""> Projects</a></p>
+                <p><a href="#resultdis"><img src="images/coreskills_icon.png" alt=""> Soft Skills & Tools</a></p>
+            </div>
+
+            <p class="repo2 back_to_home" onclick="appear()"><img src="images/contact_icon.jpg" alt=""> Contact</p>
+            <div class="contact_content" id="contactDetails">
+                <img src="images/menu4.png" alt="" class="close-burger" onclick="disAppear()">
+                <p><a href="tel:+447473545517"><img src="images/contact_icon.jpg" alt="">+447473545517</a></p>
+                <p><a href="https://mail.google.com/mail/?view=cm&to=ekeminiuseh@gmail.com&su=From%20your%20Data%20Analyst%20Portfolio" target="_blank"><img src="images/mail_icon.png" alt="">Email<br>
+                    <span class="addspell">ekeminiuseh@gmail.com</span></a></p>
+                <p><a href="https://wa.me/+447473545517?text=Hello.%20I%20saw%20your%20Data%20Analyst%20Portfolio" target="_blank"><img src="images/whatsapp_icon.png" alt="">Whatsapp</a></p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank" class="back_to_home">
+                <p class="repo"><img src="images/linkedin_icon.webp" alt=""> LinkedIn</p>
+            </a>
         </div>
 
-        <div id="mobile_portfolio_body">
-            <!-------------- Hero mobile section start -------------->
-            <div id="hero">
-                <img src="images/myphoto.jpg" alt="">
-                <div class="hero_writeup">
-                    <h1>Data Analyst</h1>
+        <div class="proj_intro">
+            <div class="into_writeup">
+                <p class="title">Data Analyst</p>
+                <div class="description">
+                    <p class="executive_summary">Ekemini Useh</p>
                     <p>An extremely talented and competent data analyst with 7 years of experience and a track record of 
-                        successfully using data to inform strategic choices made by organizations.</p>
-
-                    <div class="cta">
-                        <a href="#achievements" class="button">Achievements</a>
-                    </div>
+                        successfully using data to inform strategic choices made by organizations
+                        </p><br>
+                    <p>Please <span class="cta" onclick="appear()">hire me</span> to bring value to your company.</p>
                 </div>
             </div>
+            <img src="images/myphoto.jpg" alt="" class="dashboard">
+        </div>
+    </section>
 
-            <!-------------- Hero mobile section end -------------->
-
-            <!----------- Skills mobile section start -------------->
-
-            <div id="skills">
-                <h3>Skills</h3>
-                <div class="skillsdisplay">
-                    <div class="skillscard">
-                        <h4>Technical Skills</h4>
-                        <p>Proficient in <span class="tools">statistical analysis</span> and <span class="tools">machine learning</span></p>
-                        <p>Efficient in data cleaning, transfomation, manipulation, and analysis with <span class="tools">Python</span>, <span class="tools">R</span>, and <span class="tools">Microsoft/Oracle SQL</span>.</p>
-                        <p>Highly skilled in <span class="tools">Microsoft Excel</span> for data analysis using
-                            complex functions, VLOOKUP, and pivot tables</p>
-                        <p>Experienced with <span class="tools">Apache spark</span> for big data processing.</p>
-                        <p>Strong data visualization skills using <span class="tools">Power BI</span>, <span class="tools">Tableau</span>, and <span class="tools">SAS</span>.</p>
-                        <p>Familiar with cloud platforms (<span class="tools">AWS</span>, <span class="tools">Google cloud</span>, and <span class="tools">Azure</span>) for data storage and processing.</p>
-                        <p>Proficiency in using <span class="tools">Git</span> for version control and collaboration.</p>
-                    </div>
-                    <div class="skillscard softskills">
-                        <h4>Soft Skills</h4>
-                        <p>Problem-solving</p>
-                        <p>Ability to ask the proper questions, approach issues logically, and come up with data-driven answers.</p>
-                        <p>Precized in analysis to ensure accuracy and 
-                            reliability of results.</p>
-                        <p>Excellent communication abilities, both written and verbal, to convey data results and recommendations to stakeholders who 
-                            are not technical.</p>
-                        <p>Ability to collaborate well in groups.</p>
-                        <p>Proactive in picking up new skills and methods and keeping abreast of market developments.</p>
-                        <p>Ability to successfully manage projects, set priorities, and adhere to deadlines.</p>
-                    </div>
+    <section id="data">
+        <div class="description">
+            <p class="executive_summary">Experience</p>
+            <div class="data_sub">
+                <!-- <p class="sub_topic">Retail</p> -->
+                <div>
+                    <p><span class="points">-</span> Analyzed customer purchasing habits and created a 
+                    tailored loyalty program, which resulted in a 25% 
+                    increase in customer retention rates over a year, from Decemer,
+                    2018 to December, 2019.</p><br>
+                    <p><span class="points">-</span> Used predictive analytics to optimize marketing 
+                    campaigns, resulting in a 30% increase in revenue in 
+                    the second quater of 2021 (between April and June) 
+                    due to more focused promotions and adverts.</p><br>
+                    <p><span class="points">-</span> Utilized sentiment analysis of customer reviews and 
+                    feedback and identified important areas of 
+                    dissatisfaction, resulting in a 30% reduction in 
+                    customer complaints in 
+                    six months by resolving the most common issues. The problem was 
+                    linked to the prices of products.</p><br>
                 </div>
+                <img src="images/hero_image3.png" alt="" class="desc_pic">
             </div>
 
-            <!----------- Skills mobile section end -------------->
+            <div class="data_sub reverse">
+                <div>
+                    <p><span class="points">-</span> Identified high-potential client segments using 
+                    predictive analytics, then directed marketing efforts 
+                    toward them, generating a 20% increase in 
+                    overall sales revenue in less than a year.</p><br>
+                    <p><span class="points">-</span> Analyzed sales and inventory data to modify product mix, 
+                    focusing on high-margin and high-demand items, resulting 
+                    in a 25% improvement in gross profit margins in just nine months.</p><br>
+                    <p><span class="points">-</span> Utilized data analysis to 
+                    identify trends and causes of customer dissatisfaction, 
+                    then implemented focused retention programs that 
+                    increased revenue from current clients by 10% and 
+                    increased the number of repeat purchases made by repeat customers.</p><br>
+                </div>
+                <img src="images/hero_image2.png" alt="" class="desc_pic">
+            </div>
+        </div>
+        <img src="" alt="" class="desc_pic">
+    </section>
 
-            <!------------ Projects mobile section start -------------->
+    <section id="eda">
+        <div class="description">
+            <p class="executive_summary">Recent Projects</p>
 
-            <div id="projects">
-                <h3>Recent projects</h3>
-                <div class="skillsdisplay projcard">
+            <div class="split_project">
+                <div class="data_sub eda projects">
                     <a href="https://ekeminimichaeluseh.github.io/MelanomaEDAUsingR/" target="_blank">
-                        <div class="skillscard" id="projcardback">
-                            <img src="images/eda.png" alt="">
-                            <h4>EDA on 'Survival from malignant melanoma' dataset with R</h4>
+                        <div>
+                            <img src="images/eda.png" alt="" class="summary_pic">
+                            <p class="project_title">EDA on 'Survival from malignant melanoma' dataset with R</p>
                             <p>This report presents the 
                                 exploratory data analysis of the “Survival 
                                 from malignant melanoma” dataset using R. 
                                 The records were kept from 1962 to 1977.</p>
                         </div>
                     </a>
+                </div>
+
+
+            
+                <div class="data_sub eda projects">
                     <a href="#">
-                        <div class="skillscard" id="projcardback">
-                            <img src="images/models.png" alt="">
-                            <h4>Machine Learning Based Loan 
+                        <div>
+                            <img src="images/models.png" alt="" class="summary_pic">
+                            <p class="project_title">Machine Learning Based Loan 
                                 Eligibility Prediction Model for 
-                                Banks</h4>
+                                Banks</p>
                             <p>The aim of this project is to create a solution to Bank loan repayment defaults by comparing seven machine learning models to 
                                 determine the most efficient and identify the important features affecting the loan status 
                                 prediction’s results, based on the data collected.</p>
                         </div>
                     </a>
+                </div>
+            
+
+            
+                <div class="data_sub eda projects">
                     <a href="#">
-                        <div class="skillscard" id="projcardback">
-                            <img src="images/dashboard.png" alt="">
-                            <h4>Sales Analysis Report/Dashboard</h4>
+                        <div>
+                            <img src="images/dashboard.png" alt="" class="summary_pic">
+                            <p class="project_title">Sales Analysis Report/Dashboard</p>
                             <p>This sales analysis report includes detailed 
                                 information about the retail store's performance, 
                                 emphasizing trends, sales figures, and customer behavior. 
@@ -109,372 +152,112 @@
                         </div>
                     </a>
                 </div>
-                <a href="projects.html" class="moreproj">More projects...</a>
             </div>
-
-            <!----------- Projects mobile section end -------------->
-
-            <!----------- Achievement mobile section start -------------->
-
-            <div id="achievements">
-                <h3>My Achievements</h3>
-                <div class="achievements">
-                    <div>
-                        <p><span class="bold">Mckay Supermarket:</span> Analyzed customer purchasing habits and created a 
-                            tailored loyalty program, which resulted in a 25% 
-                            increase in customer retention rates over a year, from Decemer,
-                            2018 to December, 2019.</p>
-                    </div>
-                    <div>
-                        <p><span class="bold">Mckay Supermarket:</span> Used predictive analytics to optimize marketing 
-                            campaigns, resulting in a 30% increase in revenue in 
-                            the second quater of 2021 (between April and June) 
-                            due to more focused promotions and adverts.</p>
-                    </div>
-                    <div>
-                        <p><span class="bold">Mckay Supermarket:</span> Utilized sentiment analysis of customer reviews and 
-                            feedback and identified important areas of 
-                            dissatisfaction, resulting in a 30% reduction in 
-                            customer complaints in 
-                            six months by resolving the most common issues. The problem was 
-                            linked to the prices of products.</p>
-                    </div>
-                    <div>
-                        <p><span class="bold">Brainbox Solutions Computers:</span> Identified high-potential client segments using 
-                            predictive analytics, then directed marketing efforts 
-                            toward them, generating a 20% increase in 
-                            overall sales revenue in less than a year.</p>
-                    </div>
-                    <div>
-                        <p><span class="bold">Brainbox Solutions Computers:</span> Analyzed sales and inventory data to modify product mix, 
-                            focusing on high-margin and high-demand items, resulting 
-                            in a 25% improvement in gross profit margins in just nine months.</p>
-                    </div>
-                    <div>
-                        <p><span class="bold">Brainbox Solutions Computers:</span> Utilized data analysis to 
-                            identify trends and causes of customer dissatisfaction, 
-                            then implemented focused retention programs that 
-                            increased revenue from current clients by 10% and 
-                            increased the number of repeat purchases made by repeat customers.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!----------- Achievement mobile section end -------------->
-
-            <!------------ Contact mobile section start ------------->
-
-            <div id="contact">
-                <h3>Do you have a project that requires 
-                    my expertise? Please contact me.</h3>
+            
+            <p><span class="cta" onclick="openMore()">More projects</span></p>
+            
+            <div class="more_projects" id="moreProjects">
                 
-                <div class="contactcontent">
-                    <a href="tel:+447473545517">
-                        <div class="dial">
-                            <img src="images/call_icon.png" alt="">
-                            <p>+447473545517</p>
-                        </div>
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=ekeminiuseh@gmail.com&su=From%20your%20Data%20Analyst%20Portfolio" target="_blank">
-                        <div class="dial">
-                            <img src="images/mail_icon.png" alt="">
-                            <p>ekeminiuseh@gmail.com</p>
-                        </div>
-                    </a>
-                    <a href="https://wa.me/+447473545517?text=Hello.%20I%20saw%20your%20Data%20Analyst%20Portfolio" target="_blank">
-                        <div class="dial">
-                            <img src="images/whatsapp_icon.png" alt="">
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank">
-                        <div class="dial">
-                            <img src="images/linkedin_icon.png" alt="">
-                        </div>
-                    </a>
-                </div>
+                    <div class="data_sub eda projects">
+                        <a href="#https://ekeminimichaeluseh.github.io/MelanomaEDAUsingR/" target="_blank">
+                            <div>
+                                <img src="images/eda.png" alt="" class="summary_pic">
+                                <p class="project_title">EDA on 'Survival from malignant melanoma' dataset with R</p>
+                                <p>This report presents the 
+                                    exploratory data analysis of the “Survival 
+                                    from malignant melanoma” dataset using R. 
+                                    The records were kept from 1962 to 1977.</p>
+                            </div>
+                        </a>
+                    </div>
+                
+    
+                
+                    <div class="data_sub eda projects">
+                        <a href="#">
+                            <div>
+                                <img src="images/models.png" alt="" class="summary_pic">
+                                <p class="project_title">Machine Learning Based Loan 
+                                    Eligibility Prediction Model for 
+                                    Banks</p>
+                                <p>The aim of this project is to create a solution to Bank loan repayment defaults by comparing seven machine learning models to 
+                                    determine the most efficient and identify the important features affecting the loan status 
+                                    prediction’s results, based on the data collected.</p>
+                            </div>
+                        </a>
+                    </div>
+                
+    
+                
+                    <div class="data_sub eda projects">
+                        <a href="#">
+                            <div>
+                                <img src="images/dashboard.png" alt="" class="summary_pic">
+                                <p class="project_title">Sales Analysis Report/Dashboard</p>
+                                <p>This sales analysis report includes detailed 
+                                    information about the retail store's performance, 
+                                    emphasizing trends, sales figures, and customer behavior. 
+                                    The dashboard enables data-driven decision-making to 
+                                    boost profitability, optimize 
+                                    inventory, and improve customer satisfaction.</p>
+                            </div>
+                        </a>
+                    </div>
+                    
             </div>
-
-            <!------------ Contact mobile section end ------------->
-
-            <!----------- Copyright mobile start -------------->
-
-            <div class="copyright">
-                <p>&#169 2024 Ekemini Useh</p>
-            </div>
-
-            <!----------- Copyright mobile end -------------->
-
-        </div>
-
-        <!----------- Mobile navigation start ----------->
-        
-        <div class="nav">
-            <div class="nav_mobile">
-                <a href="#hero">
-                    <div class="btn">
-                        <img src="images/home_icon.png" alt="">
-                        <p>Home</p>
-                    </div>
-                </a>
-
-                <a href="#skills">
-                    <div class="btn">
-                        <img src="images/skills_icon.png" alt="">
-                        <p>Skills</p>
-                    </div>
-                </a>
-
-                <a href="#projects">
-                    <div class="btn">
-                        <img src="images/projects_icon.png" alt="">
-                        <p>Projects</p>
-                    </div>
-                </a>
-
-                <a href="#contact">
-                    <div class="btn">
-                        <img src="images/contact_icon.png" alt="">
-                        <p>Contact</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!----------- Mobile navigation end ----------->
+            <p><span class="cta less" onclick="closeMore()">View less</span></p>
+        </div>    
     </section>
 
 
-    <!---------- Desktop section start ----------->
+    <section id="resultdis">
+        <div class="description">
+            <p class="executive_summary">Soft Skills & Tools</p>
+            <div class="data_sub eda">
+                <p class="indusproficiency">As an expert in data analysis, I have experience in a number of sectors, including:<br>
+                    retail, healthcare, and finance, to name a few.
+                </p>
+                <div class="result">
+                    <div class="plot_explain">
+                        <p><span class="points">-</span> Analytical Thinking</p>
+                        <p><span class="points">-</span> Excellent Communication Skills</p>
+                        <p><span class="points">-</span> Problem Solving</p>
+                        <p><span class="points">-</span> Collaboration</p>
+                        <p><span class="points">-</span> Adaptability</p>
+                        <p><span class="points">-</span> Attention to Detail</p>
+                    </div>
 
-    <div id="desktop_portfolio_body">
-        
-
-            <!---------- Navigation bar desktop section start ----------->
-            <section class="desktop_navi_bar">
-                <p class="logo_desktop">Ekemini Useh</p>
-                
-                <ul>
-                    <li class="nav_desktop">
-                        <a href="#desktop_hero">
-                            <div class="btn">
-                                <img src="images/home_icon.png" alt="">
-                                <p>Home</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav_desktop">
-                        <a href="#desktop_skills">
-                            <div class="btn">
-                                <img src="images/skills_icon.png" alt="">
-                                <p>Skills</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav_desktop">
-                        <a href="#desktop_projects">
-                            <div class="btn">
-                                <img src="images/projects_icon.png" alt="">
-                                <p>Projects</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav_desktop">
-                        <a href="#desktop_contact">
-                            <div class="btn">
-                                <img src="images/contact_icon.png" alt="">
-                                <p>Contact</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <a href="https://github.com/EkeminiMichaelUseh?tab=repositories" class="btn_github_repo" target="_blank">Github</a>
-            </section>
-
-            <!---------- Navigation bar desktop section end ----------->
-
-        
-        
-        <!-------------- Hero desktop sections start -------------->
-        
-        <div id="desktop_hero">
-            <div class="hero_writeup">
-                <h1>Data Analyst</h1>
-                <p>An extremely talented and competent data analyst with 7 years of experience and a track record of 
-                    successfully using data to inform strategic choices made by organizations.</p>
-
-                <div class="cta">
-                    <a href="#desktop_achievements" class="button">Achievements</a>
+                    <div class="plot_explain">
+                        <p><span class="points">-</span> SQL</p>
+                        <p><span class="points">-</span> Python</p>
+                        <p><span class="points">-</span> R</p>
+                        <p><span class="points">-</span> Excel</p>
+                        <p><span class="points">-</span> Power BI</p>
+                        <p><span class="points">-</span> Tableau</p>
+                        <p>and more...</p>
+                    </div>
                 </div>
             </div>
-            <img src="images/myphoto.jpg" alt="">
-        </div>
+        </div>    
+    </section>
 
-        <!-------------- Hero desktop sections end -------------->
-
-        <!----------- Skills desktop section start -------------->
-
-        <div id="desktop_skills">
-            <h3>Skills</h3>
-            <div class="skillsdisplay desktop_skillsdisplay">
-                <div class="skillscard">
-                    <h4>Technical Skills</h4>
-                    <p>Proficient in <span class="tools">statistical analysis</span> and <span class="tools">machine learning</span></p>
-                    <p>Efficient in data cleaning, transfomation, manipulation, and analysis with <span class="tools">Python</span>, <span class="tools">R</span>, and <span class="tools">Microsoft/Oracle SQL</span>.</p>
-                    <p>Highly skilled in <span class="tools">Microsoft Excel</span> for data analysis using
-                        complex functions, VLOOKUP, and pivot tables</p>
-                    <p>Experienced with <span class="tools">Apache spark</span> for big data processing.</p>
-                    <p>Strong data visualization skills using <span class="tools">Power BI</span>, <span class="tools">Tableau</span>, and <span class="tools">SAS</span>.</p>
-                    <p>Familiar with cloud platforms (<span class="tools">AWS</span>, <span class="tools">Google cloud</span>, and <span class="tools">Azure</span>) for data storage and processing.</p>
-                    <p>Proficiency in using <span class="tools">Git</span> for version control and collaboration.</p>
-                </div>
-                <div class="skillscard softskills">
-                    <h4>Soft Skills</h4>
-                    <p>Problem-solving</p>
-                    <p>Ability to ask the proper questions, approach issues logically, and come up with data-driven answers.</p>
-                    <p>Precized in analysis to ensure accuracy and 
-                        reliability of results.</p>
-                    <p>Excellent communication abilities, both written and verbal, to convey data results and recommendations to stakeholders who 
-                            are not technical.</p>
-                    <p>Ability to collaborate well in groups.</p>
-                    <p>Proactive in picking up new skills and methods and keeping abreast of market developments.</p>
-                    <p>Ability to successfully manage projects, set priorities, and adhere to deadlines.</p>
-                </div>
+    <section id="recolim">
+        <div class="description">
+            <div class="make_a_call">
+                <p class="executive_summary">Do you have a project that requires 
+                    my expertise? Please <span class="cta" onclick="appear()">contact</span> me.</p>
+                <img src="images/make_a_call.png" alt="">
             </div>
-        </div>
+        </div>    
+    </section>
 
-        <!----------- Skills desktop section end -------------->
-
-        <!------------ Projects desktop section start -------------->
-
-        <div id="desktop_projects">
-            <h3>Recent projects</h3>
-            <div class="skillsdisplay desktop_projcard">
-                <a href="https://ekeminimichaeluseh.github.io/MelanomaEDAUsingR/" target="_blank">
-                    <div class="skillscard" id="projcardback">
-                        <img src="images/eda.png" alt="">
-                        <h4>EDA on 'Survival from malignant melanoma' dataset with R</h4>
-                        <p>This report presents the 
-                            exploratory data analysis of the “Survival 
-                            from malignant melanoma” dataset using R. 
-                            The records were kept from 1962 to 1977.</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="skillscard" id="projcardback">
-                        <img src="images/models.png" alt="">
-                        <h4>Machine Learning Based Loan 
-                            Eligibility Prediction Model for 
-                            Banks</h4>
-                        <p>The aim of this project is to create a solution to Bank loan repayment defaults by comparing seven machine learning models to 
-                            determine the most efficient and identify the important features affecting the loan status 
-                            prediction’s results, based on the data collected.</p>
-                    </div>
-                </a>
-                <a href="#">
-                    <div class="skillscard" id="projcardback">
-                        <img src="images/dashboard.png" alt="">
-                        <h4>Sales Analysis Report/Dashboard</h4>
-                        <p>This sales analysis report includes detailed 
-                            information about the retail store's performance, 
-                            emphasizing trends, sales figures, and customer behavior. 
-                            The dashboard enables data-driven decision-making to 
-                            boost profitability, optimize 
-                            inventory, and improve customer satisfaction.</p>
-                    </div>
-                </a>
-            </div>
-            <a href="projects.html" class="moreproj">More projects...</a>
-        </div>
-
-        <!----------- Projects desktop section end ------------->
-
-        <!----------- Achievement desktop start ---------->
-
-        <div id="desktop_achievements">
-            <h3>My Achievements</h3>
-            <div class="skillsdisplay projcard">
-                <div class="skillscard" id="projcardback">
-                    <p><span class="bold">Mckay Supermarket:</span> Analyzed customer purchasing habits and created a 
-                        tailored loyalty program, which resulted in a 25% 
-                        increase in customer retention rates over a year, from Decemer,
-                        2018 to December, 2019.</p>
-                </div>
-                <div class="skillscard" id="projcardback">
-                    <p><span class="bold">Mckay Supermarket:</span> Used predictive analytics to optimize marketing 
-                        campaigns, resulting in a 30% increase in revenue in 
-                        the second quater of 2021 (between April and June) 
-                        due to more focused promotions and adverts.</p>
-                </div>
-                <div class="skillscard" id="projcardback">
-                    <p><span class="bold">Mckay Supermarket:</span> Utilized sentiment analysis of customer reviews and 
-                        feedback and identified important areas of 
-                        dissatisfaction, resulting in a 30% reduction in 
-                        customer complaints in 
-                        six months by resolving the most common issues. The problem was 
-                        linked to the prices of products.</p>
-                </div>
-                <div class="skillscard" id="projcardback">
-                    <p><span class="bold">Brainbox Solutions Computers:</span> Identified high-potential client segments using 
-                        predictive analytics, then directed marketing efforts 
-                        toward them, generating a 20% increase in 
-                        overall sales revenue in less than a year.</p>
-                </div>
-                <div class="skillscard" id="projcardback">
-                    <p><span class="bold">Brainbox Solutions Computers:</span> Analyzed sales and inventory data to modify product mix, 
-                        focusing on high-margin and high-demand items, resulting 
-                        in a 25% improvement in gross profit margins in just nine months.</p>
-                </div>
-                <div class="skillscard" id="projcardback">
-                    <p><span class="bold">Brainbox Solutions Computers:</span> Utilized data analysis to 
-                        identify trends and causes of customer dissatisfaction, 
-                        then implemented focused retention programs that 
-                        increased revenue from current clients by 10% and 
-                        increased the number of repeat purchases made by repeat customers.</p>
-                </div>
-            </div>
-        </div>
-
-        <!----------- Achievement desktop end ------------->
-
-        <!----------- Contact desktop section start ------------->
-
-        <div id="desktop_contact">
-            <h3>Do you have a project that requires 
-                my expertise? Please contact me.</h3>
-            
-            <div class="contactcontent">
-                <a href="tel:+447473545517">
-                    <div class="dial">
-                        <img src="images/call_icon.png" alt="">
-                        <p>+447473545517</p>
-                    </div>
-                </a>
-                <a href="https://mail.google.com/mail/?view=cm&to=ekeminiuseh@gmail.com&su=From%20your%20Data%20Analyst%20Portfolio" target="_blank">
-                    <div class="dial">
-                        <img src="images/mail_icon.png" alt="">
-                        <p>ekeminiuseh@gmail.com</p>
-                    </div>
-                </a>
-                <a href="https://wa.me/+447473545517?text=Hello.%20I%20saw%20your%20Data%20Analyst%20Portfolio" target="_blank">
-                    <div class="dial">
-                        <img src="images/whatsapp_icon.png" alt="">
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank">
-                    <div class="dial">
-                        <img src="images/linkedin_icon.png" alt="">
-                    </div>
-                </a>
-            </div>
-        </div>
-
-        <!----------- Contact desktop section end ------------->
-
-    </div>
-    <!-------- Footer ------------->
-    <div class="desktop_copyright">
+    <div class="copyright">
         <p>&#169 2024 Ekemini Useh</p>
     </div>
 
+
+
+
+    <script src="jscript.js"></script>
 </body>
 </html>
