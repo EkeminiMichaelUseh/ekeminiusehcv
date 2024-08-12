@@ -66,8 +66,8 @@ body{
     width: 250px;
     border-top: 1px solid #1d1d97;
     padding: 20px 0;
-    background: #f5f5f591;
-    backdrop-filter: blur(5px);
+    background: #f5f5f5;
+    /* backdrop-filter: blur(5px); */
     margin-top: 40px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 5px #1d1d9787;
@@ -79,8 +79,8 @@ body{
     width: 250px;
     border-top: 1px solid #1d1d97;
     padding: 20px 0;
-    background: #f5f5f591;
-    backdrop-filter: blur(5px);
+    background: #f5f5f5;
+    /* backdrop-filter: blur(5px); */
     margin-top: 40px;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 5px #1d1d9787;
@@ -165,13 +165,16 @@ body{
     font-size: 50px;
     font-weight: bold;
     color: #1d1d97;
-    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-color: #000000a3;
     -webkit-text-stroke-width: 1px;
 }
 .title span{
     font-size: 13px;
     font-weight: bold;
     color: #000000;
+}
+.arrange{
+    text-align: left;
 }
 .cta{
     cursor: pointer;
@@ -221,12 +224,27 @@ body{
     background: #f5f5f591;
     backdrop-filter: blur(5px);
     margin-bottom: 40px;
+    position: relative;
+}
+#achieve{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+#some_skills{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.1;
 }
 .sub_topic, .plot_title, .discovery_topic, caption{
     font-weight: bold;
 }
 .data_sub{
     margin-bottom: 20px;
+    text-align: left;
 }
 .data_sub img{
     width: 300px;
@@ -254,6 +272,7 @@ body{
 .projects, .plot_explain{
     margin-bottom: 40px;
     box-shadow: 0 0 5px #1d1d9787;
+    text-align: left;
 }
 .projects div, .plot_explain{
     width: 80%;
@@ -311,6 +330,7 @@ body{
 .indusproficiency{
     margin-bottom: 20px;
     padding: 30px;
+    text-align: left;
 }
 .copyright{
     width: 100%;
