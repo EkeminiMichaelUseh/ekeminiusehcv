@@ -245,6 +245,7 @@ body{
 .data_sub{
     margin-bottom: 20px;
     text-align: left;
+    overflow-x: hidden;
 }
 .data_sub img{
     width: 300px;
