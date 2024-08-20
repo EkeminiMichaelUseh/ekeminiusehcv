@@ -16,7 +16,7 @@ function disAppear(){
 
 let moreProjects = document.getElementById('moreProjects');
 function openMore(){
-    moreProjects.style.height = '90vh';
+    moreProjects.style.height = '60vh';
 }
 function closeMore(){
     moreProjects.style.height = '0';
