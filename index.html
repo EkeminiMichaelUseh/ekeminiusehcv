@@ -1,240 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="cv_icon" href="images/cv_icon.png">
-    <title>EkeminiCV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <section id="introduction">
-        <div class="navigate">
-            <a href="#introduction" class="back_to_home">
-                <img src="images/up.png" alt="">
-            </a>
-            <p class="toc_head burger" onclick="showMenu()">CV Sections +</p>
-            <div class="toc" id="navLinks">
-                <img src="images/menu4.png" alt="" class="close-burger" onclick="hideMenu()">
-                <p><a href="#introduction"><img src="images/home_icon.png" alt=""> Introduction</a></p>
-                <p><a href="#data"><img src="images/skills_icon.png" alt=""> Experience</a></p>
-                <p><a href="#eda"><img src="images/projects_icon.png" alt=""> Projects</a></p>
-                <p><a href="#resultdis"><img src="images/coreskills_icon.png" alt=""> Soft Skills & Tools</a></p>
-            </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-            <p class="repo2 back_to_home" onclick="appear()"><img src="images/contact_icon.jpg" alt=""> Contact +</p>
-            <div class="contact_content" id="contactDetails">
-                <img src="images/menu4.png" alt="" class="close-burger" onclick="disAppear()">
-                <p><a href="tel:+447473545517"><img src="images/contact_icon.jpg" alt="">+447473545517</a></p>
-                <p><a href="https://mail.google.com/mail/?view=cm&to=ekeminiuseh@gmail.com&su=From%20your%20Data%20Analyst%20Portfolio" target="_blank"><img src="images/mail_icon.png" alt="">Email<br>
-                    <span class="addspell">ekeminiuseh@gmail.com</span></a></p>
-                <p><a href="https://wa.me/+447473545517?text=Hello.%20I%20saw%20your%20Data%20Analyst%20Portfolio" target="_blank"><img src="images/whatsapp_icon.png" alt="">Whatsapp</a></p>
-            </div>
+    <title>Ekemini CV</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-            <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank" class="back_to_home">
-                <p class="repo"><img src="images/linkedin_icon.webp" alt=""></p>
-            </a>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Ekemini Useh</h4>
+              <span>Data Analyst</span>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">My skills and expertise?</a></li>
+                <li><a href="#section3">My Projects</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <!-- <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-Mailbox"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-Call"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                </li>
+              </ul>
+            </div> -->
+            <div class="copyright-text">
+              <p>&#169 2025 Ekemini Useh</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="proj_intro">
-            <div class="into_writeup">
-                <p class="title">Data Analyst</p>
-                <div class="description">
-                    <p class="executive_summary">Ekemini Useh</p>
-                    <p class="arrange">An extremely talented and competent data analyst with 7 years of experience and a track record of 
-                        successfully using data to inform strategic choices made by organizations
-                        </p><br>
-                    <p class="arrange">Please <span class="cta" onclick="appear()">hire me</span> to bring value to your company.</p>
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+          <div class="section-heading">
+            <h2>About Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >I’m a dedicated Data Analyst with a passion for uncovering the stories 
+              hidden within data. My goal is simple: to transform complex datasets into 
+              clear, actionable insights that help organizations make smarter decisions 
+              and achieve their goals.</span
+            >
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/left-image.jpeg" alt="" />
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <!-- <h4>A little more</h4> -->
+                  <p>
+                    With hands-on experience in tools like SQL, Python, 
+                    Power BI, and Excel, I specialize in creating impactful 
+                    dashboards, identifying key trends, and solving problems 
+                    through data. From improving performance metrics to driving 
+                    strategic planning, my work is always focused on delivering 
+                    real-world results. <br><br>
+                    Take a look at my projects to see how I’ve helped businesses 
+                    harness the power of their data. Together, we can turn your data 
+                    into a powerful decision-making tool.
+                  </p>
+                  <div class="white-button">
+                    <a href="#proj-sec">Projects</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img src="images/myphoto.jpg" alt="" class="dashboard">
+          </div>
+          <!-- <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Sed sagittis rhoncus velit</h4>
+                  <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum fermentum
+                    eleifend nibh, vitae sodales elit finibus pretium.
+                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
+                    semper.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/right-image.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
-    </section>
+      </section>
 
-    <section id="data">
-        <img src="images/achievement_icon.png" alt="" id="achieve">
-        <div class="description">
-            <p class="executive_summary">Experience</p>
-            <div class="data_sub">
-                <!-- <p class="sub_topic">Retail</p> -->
-                <div>
-                    <p><span class="points">-</span> Analyzed customer purchasing habits and created a 
-                    tailored loyalty program, which resulted in a 25% 
-                    increase in customer retention rates over a year, from Decemer,
-                    2018 to December, 2019.</p><br>
-                    <p><span class="points">-</span> Used predictive analytics to optimize marketing 
-                    campaigns, resulting in a 30% increase in revenue in 
-                    the second quater of 2021 (between April and June) 
-                    due to more focused promotions and adverts.</p><br>
-                    <p><span class="points">-</span> Utilized sentiment analysis of customer reviews and 
-                    feedback and identified important areas of 
-                    dissatisfaction, resulting in a 30% reduction in 
-                    customer complaints in 
-                    six months by resolving the most common issues. The problem was 
-                    linked to the prices of products.</p><br>
-                </div>
-                <img src="images/hero_image3.png" alt="" class="desc_pic">
-            </div>
-
-            <div class="data_sub reverse">
-                <div>
-                    <p><span class="points">-</span> Identified high-potential client segments using 
-                    predictive analytics, then directed marketing efforts 
-                    toward them, generating a 20% increase in 
-                    overall sales revenue in less than a year.</p><br>
-                    <p><span class="points">-</span> Analyzed sales and inventory data to modify product mix, 
-                    focusing on high-margin and high-demand items, resulting 
-                    in a 25% improvement in gross profit margins in just nine months.</p><br>
-                    <p><span class="points">-</span> Utilized data analysis to 
-                    identify trends and causes of customer dissatisfaction, 
-                    then implemented focused retention programs that 
-                    increased revenue from current clients by 10% and 
-                    increased the number of repeat purchases made by repeat customers.</p><br>
-                </div>
-                <img src="images/hero_image2.png" alt="" class="desc_pic">
-            </div>
-        </div>
-        <img src="" alt="" class="desc_pic">
-    </section>
-
-    <section id="eda">
-        <div class="description">
-            <p class="executive_summary">Recent Projects</p>
-
-            <div class="split_project">
-
-                <div class="data_sub eda projects">
-                    <a href="https://github.com/EkeminiMichaelUseh/Supply_Chain_Analysis">
-                        <div>
-                            <img src="images/dashboard.png" alt="" class="summary_pic">
-                            <p class="project_title">Supply Chain Analysis</p>
-                            <p>A project utilizing data analytics to 
-                                optimize operations, inventory, and 
-                                logistics in order to save costs and increase efficiency.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="data_sub eda projects">
-                    <a href="https://github.com/EkeminiMichaelUseh/Employee_Training_Analysis">
-                        <div>
-                            <img src="images/dashboard.png" alt="" class="summary_pic">
-                            <p class="project_title">Employee Training Analysis</p>
-                            <p>An analysis project for employee training designed to evaluate 
-                                training coverage and costs, finding inefficiencies, 
-                                to enable optimal resource allocation for comprehensive 
-                                skill development.</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="data_sub eda projects">
-                    <a href="https://github.com/EkeminiMichaelUseh/MelanomaEDAUsingR" target="_blank">
-                        <div>
-                            <img src="images/eda.png" alt="" class="summary_pic">
-                            <p class="project_title">EDA on 'Survival from malignant melanoma' dataset with R</p>
-                            <p>This report presents the 
-                                exploratory data analysis of the “Survival 
-                                from malignant melanoma” dataset using R. 
-                                The records were kept from 1962 to 1977.</p>
-                        </div>
-                    </a>
-                </div>
-
-
-            
-                <div class="data_sub eda projects">
-                    <a href="https://github.com/EkeminiMichaelUseh/Loan_Eligibility_Prediction_Model">
-                        <div>
-                            <img src="images/models.png" alt="" class="summary_pic">
-                            <p class="project_title">Machine Learning Based Loan 
-                                Eligibility Prediction Model for 
-                                Banks</p>
-                            <p>The aim of this project is to create a solution to Bank loan repayment defaults by comparing seven machine learning models to 
-                                determine the most efficient and identify the important features affecting the loan status 
-                                prediction’s results, based on the data collected.</p>
-                        </div>
-                    </a>
-                </div>
-            
-
-            
-                <div class="data_sub eda projects">
-                    <a href="https://github.com/EkeminiMichaelUseh/Product_Sales_Analysis">
-                        <div>
-                            <img src="images/dashboard.png" alt="" class="summary_pic">
-                            <p class="project_title">Product Sales Analysis</p>
-                            <p>This sales analysis report includes detailed 
-                                information about an e-commerce store's performance, 
-                                emphasizing trends, sales figures, and customer behavior. 
-                                The dashboard enables data-driven decision-making to 
-                                boost profitability, optimize 
-                                inventory, and improve customer satisfaction.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <p>Please view more projects on <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank" class="cta">LinkedIn</a></p>
-        </div>    
-    </section>
-
-
-    <section id="resultdis">
-        <div class="description">
-            <p class="executive_summary">Soft Skills & Tools</p>
-            <img src="images/skills_icon.png" alt="" id="some_skills">
-            <div class="data_sub eda">
-                <p class="indusproficiency">As an expert in data analysis, I have experience in a number of sectors, including:<br>
-                    retail, healthcare, and finance, to name a few.
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My skills and expertise?</h2>
+            <div class="line-dec"></div>
+            <span>Here, you’ll find the key skills that empower me to deliver 
+              meaningful results and make a tangible impact.</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>Soft skills</h4>
+                <p>
+                  Communication Skills <br><br> Problem-Solving <br><br> Critical Thinking <br><br> 
+                  Attention to detail <br><br> Collaboration <br><br> Stakeholder management <br><br> 
+                  Time Management
                 </p>
-                <div class="result">
-                    <div class="plot_explain">
-                        <p><span class="points">-</span> Analytical Thinking</p>
-                        <p><span class="points">-</span> Excellent Communication Skills</p>
-                        <p><span class="points">-</span> Problem Solving</p>
-                        <p><span class="points">-</span> Collaboration</p>
-                        <p><span class="points">-</span> Adaptability</p>
-                        <p><span class="points">-</span> Attention to Detail</p>
-                    </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>Soft skills</h4>
+                <p>
+                  Adaptability <br><br> Emotional Intelligence <br><br> 
+                  Presentation Skills <br><br> Data confidentiality <br><br> Integrity <br><br> 
+                  Consensus building <br><br> Curiosity
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Easy Customize</h4>
+                <p>
+                  <span style="text-decoration: underline #28a7466c 3px;">Data Manipulation and Analysis</span><br> 
+                  Data Cleaning, Statistical Analysis, ELT Processes <br> <br> 
+                  <span style="text-decoration: underline #28a7466c 3px;">Programming Languages</span><br> Python, SQL, R <br><br> 
+                  <span style="text-decoration: underline #28a7466c 3px;">Data Visualization, Dashboard Development, and Reporting</span><br> Advanced Excel Skills, Power BI, Tableau, SAS <br><br> 
+                  Database Management
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Technical skills</h4>
+                <p>
+                  Data Modeling <br><br> 
+                  Automation <br><br> 
+                  <span style="text-decoration: underline #28a7466c 3px;">Machine Learning</span><br> Feature Engineering, Clustering, Classification, and Regression <br><br> 
+                  Data Governance and Compliance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="plot_explain">
-                        <p><span class="points">-</span> SQL</p>
-                        <p><span class="points">-</span> Python</p>
-                        <p><span class="points">-</span> R</p>
-                        <p><span class="points">-</span> Excel</p>
-                        <p><span class="points">-</span> Power BI</p>
-                        <p><span class="points">-</span> Tableau</p>
-                        <p>and more...</p>
-                    </div>
+      <section class="section my-work" data-section="section3" id="proj-sec">
+
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Projects</h2>
+            <div class="line-dec"></div>
+
+          </div>
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="#">
+                    <img src="assets/images/dashboard1.png" alt="" />
+                  </a>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="#">
+                    <img src="assets/images/dashboard2.png" alt="" />
+                  </a>
+                </div>
+              </div>
             </div>
-        </div>    
-    </section>
 
-    <section id="recolim">
-        <div class="description">
-            <div class="make_a_call">
-                <p class="executive_summary">Do you have a project that requires 
-                    my expertise? Please <span class="cta" onclick="appear()">contact</span> me.</p>
-                <img src="images/make_a_call.png" alt="">
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="#">
+                    <img src="assets/images/dashboard3.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="#">
+                    <img src="assets/images/dashboard1.png" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="white-button">
+                <a href="https://github.com/EkeminiMichaelUseh?tab=repositories" target="_blank">Github Repositories</a>
+              </div>
             </div>
-        </div>    
-    </section>
+          </div>
+        </div>
 
-    <div class="copyright">
-        <p>&#169 2024 Ekemini Useh</p>
+        <!-- <div class="container">
+          <div class="section-heading">
+            <h2>My Projects</h2>
+            <div class="line-dec"></div>
+            <span>Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
+              amet. Duis ac elit vulputate, lobortis arcu quis, vehicula
+              mauris.</span>
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>people</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>nature</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>animals</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-01.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-01.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>First Title</h4>
+                      <span>free to use our template</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-02.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-02.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Second Title</h4>
+                      <span>please tell your friends</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-03.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-03.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Third</h4>
+                      <span>customize anything</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-04.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-04.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Item Fourth</h4>
+                      <span>Re-distribution not allowed</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-05.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-05.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Fifth Awesome</h4>
+                      <span>Ut sollicitudin risus</span>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/portfolio-06.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/portfolio-06.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Awesome Sixth</h4>
+                      <span>Donec eget massa ante</span>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            <span>Are you looking for a skilled data analyst to help 
+              harness the power of data? Let’s collaborate to achieve 
+              meaningful insights and drive your team’s success. <br>
+              Contact me today</span>
+          </div>
+
+          <div class="left-image-post"></div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="https://mail.google.com/mail/?view=cm&to=ekeminiuseh@gmail.com&su=From%20your%20Data%20Analyst%20Portfolio" target="_blank">
+                    <div style="height: 150px; background: #161515; text-align: center;
+                    padding: 30px;">
+                      <img src="assets/images/mail_icon.png" alt="" style="width: 50px; margin-bottom: 20px;">
+                      <p style="font-size: 20px; color: #f5f5f5c2;">ekeminiuseh@gmail.com</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="tel:+447473545517">
+                    <div style="height: 150px; background: #161515; text-align: center;
+                    padding: 30px;">
+                      <img src="assets/images/call_icon.png" alt="" style="width: 50px; margin-bottom: 20px;">
+                      <p style="font-size: 20px;color: #f5f5f5c2;">+447473545517</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="https://www.linkedin.com/in/ekemini-useh-1239b223a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BA4isWSiiRFW%2BxiG1nH0llQ%3D%3D" target="_blank">
+                    <div style="height: 150px; background: #161515; text-align: center;
+                    padding: 30px;">
+                      <img src="assets/images/linkedin_icon.png" alt="" style="width: 50px; margin-bottom: 20px;">
+                      <p style="font-size: 20px;color: #f5f5f5c2;">LinkedIn</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="left-image">
+                  <a href="https://wa.me/+447473545517?text=Hello.%20I%20saw%20your%20Data%20Analyst%20Portfolio" target="_blank">
+                    <div style="height: 150px; background: #161515; text-align: center;
+                    padding: 30px;">
+                      <img src="assets/images/whatsapp_icon.png" alt="" style="width: 50px; margin-bottom: 20px;">
+                      <p style="font-size: 20px;color: #f5f5f5c2;">WhatsApp</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Your message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
     </div>
 
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
 
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
 
-    <script src="jscript.js"></script>
-</body>
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
 </html>
